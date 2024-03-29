@@ -1,8 +1,8 @@
 """
  Name: car_crash_1.py
  Author: Jessica Soler
- Date: 3/22/24
- Purpose: PyGame Hello World, an empty window
+ Date: 3/28/24
+ Purpose: draw the playing field
 """
 # pip install pygame-ce
 # import pygame library
