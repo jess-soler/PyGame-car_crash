@@ -74,7 +74,7 @@ while True:
             #----------------------------------DRAW ON BACK BUFFER----------------------------------#
             # draw everything on the backbuffer first
             # fill the surface with the background image loaded earlier
-            self.surface.blit(self.Color, (0, 0))
+            self.surface.blit(self.background, (0, 0))
             
             #----------------------------------UPDATE SURFACE----------------------------------#
             # from backbuffer, update pygame display to reflect any changes
@@ -82,8 +82,9 @@ while True:
             
             # cap game speed at 60 frames per second
             self.clock.tick(60)
-            
-# create game isntance 
-car_crash = CarCrash()
-# start the game
-car_crash.game_loop()
+
+
+    # create game isntance 
+    car_crash = config.CarCrash()
+    # start the game
+    car_crash.game_loop()
