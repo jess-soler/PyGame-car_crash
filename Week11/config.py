@@ -13,7 +13,6 @@ WIDTH = 400
 HEIGHT = 600
 
 class CarCrash:
-    
     def __init__(self):
     
         # initialize the pygame library
