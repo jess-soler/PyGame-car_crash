@@ -66,24 +66,6 @@ while True:
                 # exit python
                 exit()
 
-#----------------------------------RUN GAME----------------------------------#
-    def game_loop(self):
-        """ infinate game loop """
-        while True:
-            self.check_events()
-            
-            #----------------------------------DRAW ON BACK BUFFER----------------------------------#
-            # draw everything on the backbuffer first
-            # fill the surface with the background image loaded earlier
-            self.surface.blit(self.background, (0, 0))
-            
-            #----------------------------------UPDATE SURFACE----------------------------------#
-            # from backbuffer, update pygame display to reflect any changes
-            pygame.display.update()
-            
-            # cap game speed at 60 frames per second
-            self.clock.tick(60)
-
 
     # create game isntance 
     car_crash = config.CarCrash()
